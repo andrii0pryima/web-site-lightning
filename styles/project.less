@@ -1,0 +1,30 @@
+@import "_vars";
+
+.project{
+  position: relative;
+  background-attachment: fixed;
+  height: 628px;
+  color: fade(#ffffff, 80%);
+  &-content{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+  }
+  &-title{
+    font-size: 144px;
+    &-sm{
+      font-size: 48px;
+    }
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(transparent,  @dark);
+    height: 128px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,616 @@
+@import "preset";
+@import "../../styles/_vars";
+
+.toolbar{
+  position: absolute;
+  background-color: @toolbar;
+  top: 70px;
+  right: 0;
+  z-index: 1024;
+  transition: all .44s ease-out;
+  color: @muted;
+}
+.horizontal{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.vertical{
+  display: flex;
+  align-items: center;
+}
+.p-in{
+  padding: 0 8px;
+}
+
+.config{
+  padding: 0 16px;
+  width: 400px;
+  .theme{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .name{
+      margin: 0;
+    }
+  }
+  .color-group{
+    display: flex;
+  }
+  &-block{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    border-bottom: 1px solid @muted;
+    .name{
+      margin-bottom: 12px;
+      color: white;
+    }
+    .customize{
+      margin-top: 7px;
+    }
+    .traditional, .new{
+      cursor: pointer;
+    }
+
+  }
+  .modes{
+    display: flex;
+    .day{
+      border-top: 1px solid @muted;
+      border-left: 1px solid @muted;
+      border-bottom: 1px solid @muted;
+      border-top-left-radius: .3rem;
+      border-bottom-left-radius: .3rem;
+    }
+    .night{
+      border-top: 1px solid @muted;
+      border-right: 1px solid @muted;
+      border-bottom: 1px solid @muted;
+      border-top-right-radius: .3rem;
+      border-bottom-right-radius: .3rem;
+    }
+    .day, .night{
+      padding: 2px 8px;
+      height: 24px;
+    }
+    svg{
+      height: 12px;
+    }
+    .active{
+      background-color: @active;
+    }
+  }
+  .colors{
+    display: flex;
+    .color-box{
+      height: 16px;
+      width: 16px;
+      margin: 4px;
+    }
+    .sell-orig{
+      background-color: @sell;
+    }
+    .sell-new{
+      background-color: @sell-new;
+    }
+    .buy-orig{
+      background-color: @buy;
+    }
+    .buy-new{
+      background-color: @buy-new;
+    }
+  }
+
+}
+
+.signature{
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 3px;
+  text-align: center;
+  color: @muted;
+  font-size: 15px;
+  padding: 8px 0;
+  cursor: default;
+}
+
+#root{
+  min-height: 100vh;
+  cursor: default;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 295px 1fr 295px 295px;
+  grid-template-rows: 50px 1fr 1fr;
+  grid-template-areas:
+  "info info info orderform"
+  "market chart orderbook orderform"
+  "orders orders orders orderform";
+  .info{
+    grid-area: info;
+    padding: 5px!important;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &-price{
+      color: @buy;
+    }
+    &-block{
+      height: 32px;
+      line-height: 32px;
+    }
+  }
+  .market{
+    grid-area: market;
+    &-group, .pair-group{
+      margin-top: 12px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .pair-group{
+      cursor: pointer;
+    }
+    .pair-container{
+      padding-bottom: 16px;
+      border-bottom: 1px solid @faded;
+    }
+    &-btn{
+      font-size: 12px;
+      padding: 4px 16px;
+      &:hover{
+        cursor: pointer;
+        background: @faded-text;
+      }
+    }
+    .search-group{
+      padding: 0 5px;
+      margin-top: 12px;
+      display: flex;
+      font-size: 14px;
+      align-items: center;
+      border-bottom: 1px solid @faded;
+      &:focus-within{
+        border-bottom: 1px solid @main;
+      }
+    }
+    #search{
+      text-align: left;
+      background: transparent;
+      padding: 8px;
+      &::placeholder{
+        color: @faded-text;
+      }
+    }
+    .sort-group{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      font-size: 14px;
+      .pair,
+      .last-price,
+      .change{
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+    .pair-name{
+      width: 30%;
+    }
+    .pair-price{
+      width: 50%;
+    }
+    .pair-change{
+      width: 20%;
+      text-align: right;
+    }
+  }
+  .currency-icon{
+    background-image: url("./../../ico/btc.png");
+    height: 24px;
+    width: 24px;
+  }
+  .currency-info{
+    grid-area: currency;
+    margin-top: 25px;
+    .layout-header{
+      display: flex;
+      align-items: center;
+    }
+    .currency-name{
+      margin-left: 12px;
+    }
+    .data-container{
+      margin-top: 10px;
+    }
+    .data-group{
+      margin-top: 5px;
+    }
+  }
+  #open-orders{
+    grid-area: orders;
+    .headers{
+      display: flex;
+      align-items: flex-start;
+    }
+    .underline{
+      padding: 4px;
+      border-bottom: 2px solid @dark;
+      margin-right: 20px;
+      &:hover{
+        cursor: pointer;
+        color: white;
+      }
+    }
+    .active{
+      border-bottom: 2px solid @main;
+    }
+    .open-orders-group{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 14px;
+      .open-orders-info{
+        padding: 4px 16px;
+        &:hover{
+          cursor: text;
+        }
+      }
+      #cancel-orders{
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .chart{
+    grid-area: chart;
+    .chart-tool{
+      margin-top: 12px;
+      padding: 4px 16px;
+      display: inline-block;
+      &:hover{
+        cursor: pointer;
+        background-color: @faded-text;
+      }
+    }
+    .chart-data-group{
+      margin-top: 20px;
+    }
+    .chart-data{
+      padding: 4px 8px;
+      display: inline-block;
+    }
+    #chart-canvas{
+      margin-top: 12px;
+    }
+  }
+  .order-book{
+    grid-area: orderbook;
+    .order-info{
+      font-size: 12px;
+      letter-spacing: normal;
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0 8px 0;
+      .price-text,
+      .amount-text,
+      .total-text{
+        display: inline-block;
+      }
+      .price-text{
+        width: 30%;
+        text-align: left;
+      }
+      .amount-text,
+      .total-text{
+        width: 35%;
+        text-align: right;
+      }
+    }
+    .sell-order, .buy-order{
+      font-size: 12px;
+      letter-spacing: normal;
+      display: flex;
+      justify-content: space-between;
+      &:hover{
+        background-color: @faded;
+        cursor: pointer;
+      }
+      .order-price{
+        width: 30%;
+        text-align: left;
+      }
+      .order-amount{
+        width: 30%;
+        text-align: right;
+      }
+      .order-total{
+        width: 30%;
+        text-align: right;
+      }
+    }
+    .sell-order{
+      .order-amount, .order-total{
+        color: lightgray;
+      }
+    }
+    .buy-order{
+      .order-amount, .order-total{
+        color: lightgray;
+      }
+    }
+    .order-delimiter{
+      margin: 10px 0;
+    }
+  }
+  #place-order{
+    background-color: @order;
+  }
+  .place-order{
+    grid-area: orderform;
+    .btn-group{
+      margin-top: 20px;
+    }
+    .order-btn{
+      user-select: none;
+      display: inline-block;
+      text-align: center;
+      height: 32px;
+      width: 128px;
+      color: white;
+      line-height: 32px;
+      cursor: pointer;
+    }
+    .buy{
+      border-top-left-radius: .3rem;
+      border-bottom-left-radius: .3rem;
+    }
+    .sell{
+      border-top-right-radius: .3rem;
+      border-bottom-right-radius: .3rem;
+    }
+    svg{
+      fill: @faded-text;
+      height: 18px;
+    }
+    svg:hover{
+      cursor: pointer;
+      fill: @main;
+    }
+    .limit-group{
+      margin-top: 20px;
+      .limit{
+        display: inline-block;
+        font-size: 12px;
+        padding: 4px 8px;
+        border-bottom: 2px solid @layout;
+        color: rgb(146, 154, 165);
+        font-weight: 600;
+        &:hover{
+          cursor: pointer;
+          color: white;
+        }
+      }
+      .active{
+        border-bottom: 2px solid @main;
+      }
+    }
+    .order-form{
+      .order-values{
+        .input-group{
+          display: flex;
+          margin: 18px 0;
+          align-items: center;
+          letter-spacing: normal;
+          font-size: 13px;
+          border-radius: .3rem;
+          padding: 0 6px;
+          border: 1px solid transparent;
+          &:focus-within{
+            border: 1px solid @main;
+          }
+        }
+      }
+      .balance-icon, .user-balance{
+        display: inline-block;
+      }
+      .balance-icon:hover{
+        fill: @faded-text;
+        cursor: default;
+      }
+      .balance-group{
+        margin-top: 14px;
+        display: flex;
+        align-items: center;
+        .user-balance{
+          margin-left: 8px;
+        }
+      }
+    }
+    .buy-btn{
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      height: 40px;
+      width: 256px;
+      border: none;
+      box-shadow: none;
+      margin-top: 8px;
+      &:active{
+        background-color: #159865;
+      }
+    }
+    .quick-values{
+      font-size: 12px;
+      .p-group{
+        text-align: center;
+        &:hover{
+          color: white;
+          cursor: pointer;
+        }
+        .p-visual{
+          height: 10px;
+          width: 40px;
+          border-radius: 1px;
+          margin-bottom: 3px;
+        }
+      }
+    }
+    .assets{
+      font-size: 12px;
+      margin-top: 60px;
+      .user-assets{
+        margin-top: 10px;
+      }
+      .asset-func{
+        display: inline-block;
+        padding: 4px 16px;
+        width: 124px;
+        text-align: center;
+        &:hover{
+          cursor: pointer;
+          background-color: @active;
+        }
+      }
+      .assets-group{
+        margin-top: 12px;
+      }
+      .currency, .av-text, .av{
+        display: inline-block;
+      }
+      .currency{
+        width: 32px;
+        color: white;
+        text-align: left;
+      }
+      .av-text{
+        text-align: center;
+      }
+      .av{
+        color: white;
+        text-align: right;
+        float: right;
+      }
+    }
+  }
+
+  .layout-main{
+    padding: 20px 16px;
+    background-color: @layout;
+    border: 2px solid #14151A;
+  }
+  .layout-header{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: @ff-mont;
+  }
+  .place-order{
+    max-width: 100%;
+    width: 295px;
+  }
+}
+#chat{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 12px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background: @main;
+  transition: width .3s ease;
+  &:hover{
+    cursor: pointer;
+    width: 128px;
+  }
+  &:hover #support{
+    position: relative;
+    right: unset;
+    opacity: 1;
+  }
+  svg{
+    height: 22px;
+    width: 22px;
+    fill: @dark;
+
+  }
+  #support{
+    position: fixed;
+    right: -1000px;
+    margin-left: 5px;
+    font-weight: 600;
+    color: @dark;
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+}
+
+.checkbox, .radio{
+  display: none;
+}
+.radio-label{
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border: 1px solid @faded-text;
+  border-radius: 50%;
+  &:before{
+    position: relative;
+    content: "";
+    display: block;
+    height: 8px;
+    width: 8px;
+    background-color: transparent;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.radio:checked ~.radio-label{
+  border: 1px solid @main;
+  box-shadow: 0 0 2px @main;
+  &:before{
+    background-color: @main;
+  }
+}
+
+
+.checkbox-label{
+  display: block;
+  width: 32px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: @faded-text;
+  border: 2px solid @faded-text;
+  &:hover{
+    cursor: pointer;
+  }
+  &:before{
+    position: relative;
+    content: "";
+    display: block;
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    transition: all .3s ease;
+  }
+}
+
+.checkbox:checked ~ .checkbox-label{
+  background-color: @buy;
+  border: 2px solid @buy;
+  &:before{
+    left: 100%;
+    transform: translate(-100%, -50%)
+  }
+}
+.radio-name{
+  margin-left: 8px;
+}

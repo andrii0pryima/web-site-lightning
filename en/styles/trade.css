@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sererif;
+}
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+li {
+  list-style: none;
+}
+.container {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+.ff-mont {
+  font-family: 'Montserrat', sererif;
+}
+.ff-slab {
+  font-family: 'Roboto Slab', sererif;
+}
+.bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ptb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.muted {
+  color: #8d8d8d;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-header {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.text-description {
+  color: #8d8d8d;
+  font-family: 'Roboto Slab', sererif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.btn {
+  display: inline-block;
+  color: #fff;
+  font-family: 'Montserrat', sererif;
+  background: #fec503;
+  font-size: 1.5rem;
+  padding: 8px 24px;
+  border-radius: 0.3rem;
+  border: 1px solid #fec503;
+}
+.btn:hover {
+  color: #000208;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(254, 197, 3, 0.5);
+}
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+.btn-100 {
+  width: 100%;
+}
+.box {
+  box-sizing: border-box;
+}
+.btn-outline {
+  background: transparent;
+  color: #fff;
+}
+.btn-outline:hover {
+  color: #fec503;
+}
+.text-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sererif;
+}
+.sub-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sererif;
+}
+.h-align {
+  display: flex;
+  align-items: center;
+}
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buy {
+  color: #74A700;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.locked {
+  overflow: hidden;
+}
+.d-none {
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track-piece {
+  background: linear-gradient(#212529, #000208, #000208);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #000208, transparent);
+  border-radius: 50%;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #fafafa, transparent);
+}
+.slide-right {
+  position: absolute;
+  right: -100%;
+}
+/*# sourceMappingURL=trade.css.map */

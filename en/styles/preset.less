@@ -1,0 +1,79 @@
+@import "./../../styles/_vars";
+
+@layout: #191B20;
+@toolbar: #2B2F36;
+@order: #1E2026;
+@active: #474D57;
+@faded: #2A2D35;
+@faded-text: #929aa5;
+@light-bg: #E6E8EA;
+
+*{
+  box-sizing: border-box;
+}
+body{
+  font-size: 14px;
+  color: white;
+}
+.buy-col{
+  color: @buy;
+}
+.buy-bg{
+  background-color: @buy;
+}
+.sell-col{
+  color: @sell;
+}
+.sell-bg{
+  background-color: @sell;
+}
+
+
+.col-b{
+  color: black;
+}
+.fz-14{
+  font-size: 14px;
+  letter-spacing: normal;
+}
+.fz-12{
+  font-size: 12px;
+  letter-spacing: normal;
+}
+.fz-10{
+  font-size: 10px;
+  letter-spacing: normal;
+}
+.faded{
+  background-color: @faded;
+  &:focus{
+    background-color: @faded;
+  }
+}
+.light{
+  background-color: @light-bg;
+  &:focus{
+    background-color: @light-bg;
+  }
+}
+.faded-text{
+  color: @faded-text;
+}
+.order-input{
+  transition: none;
+  color: white;
+  width: 80%;
+  height: 32px;
+  font-size: 12px;
+  text-align: right;
+  font-style: normal;
+  &:focus{
+    font-style: normal;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

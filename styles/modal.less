@@ -1,0 +1,107 @@
+@import "_vars";
+
+#getting-started{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1024;
+  .main{
+    position: fixed;
+    z-index: 2048;
+    border: 2px solid fade(white, 32%);
+    box-shadow: 0 0 16px fade(white, 32%);
+    border-radius: 2px;
+    padding: 32px 64px;
+    width: 100%;
+    max-width: 500px;
+    flex-direction: column;
+    .input-wrapper{
+      border-bottom: 1px solid @muted;
+    }
+    .input-wrapper{
+      margin-bottom: 16px;
+    }
+    input{
+      background: transparent;
+      color: white;
+    }
+    .btn[type="submit"]{
+      margin-top: 16px;
+    }
+    .tab{
+      &-group{
+        margin-bottom: 16px;
+      }
+      &-link{
+        display: inline-block;
+        font-size: 32px;
+        padding: 16px 32px;
+      }
+      &-scroll{
+        height: 3px;
+        width: 50%;
+        float: right;
+        background-color: @main;
+        border-radius: 1.5px;
+        transition: all .5s ease;
+        .shifted{
+          left: 50%;
+        }
+      }
+    }
+  }
+}
+.gs-input{
+  width: 100%;
+  &::placeholder{
+    color: fade(white, 90%);
+  }
+  &:focus{
+    &::placeholder{
+      color: @dark;
+    }
+  }
+}
+.close{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 32px;
+  color: fade(white, 90%);
+}
+.active-tab{
+  color: @main;
+}
+#agreement{
+  color: white;
+  a{
+    text-decoration: underline;
+  }
+}
+.danger{
+  color:#dc3545;
+  text-align: left;
+  font-size: 14px;
+}
+
+.agreement{
+  background-color: #efefef;
+  &-header, &-subheader{
+    text-transform: uppercase;
+    margin: 32px 0 16px 0 ;
+    font-weight: 600;
+  }
+  &-header{
+    font-size: 20px;
+    text-align: center;
+  }
+  &-subheader{
+    font-size: 16px;
+    text-align: left;
+  }
+  p{
+    font-weight: 200;
+  }
+}

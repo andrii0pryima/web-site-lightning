@@ -1,0 +1,49 @@
+@import "../../styles/_vars";
+@import "../../styles/header";
+@import "preset";
+
+nav{
+  position: relative;
+  padding: 20px 0;
+  .navigator{
+    justify-content: flex-start;
+  }
+  .mobi{
+    justify-content: space-around;
+  }
+  .mobi, ul, li, a{
+    display: flex;
+    align-items: center;
+  }
+  .logo{
+    font-size: 1.25rem;
+    margin-left:16px;
+    margin-right:32px;
+  }
+  svg{
+    height: 22px;
+    fill: white;
+    transition: all .2s ease-in-out;
+  }
+  svg:hover{
+    fill: @main;
+    cursor: pointer;
+  }
+  #toolbar{
+    margin-left: auto;
+    #setting{
+      svg:hover{
+        //transform: rotate(90deg);
+      }
+    }
+    #user{
+      svg{
+        height: 30px;
+      }
+    }
+  }
+}
+
+.rotate{
+  transform: rotate(90deg);
+}

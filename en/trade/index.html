@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Lightning | Trade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- Header -->
+<nav id="nav">
+    <div class="container">
+        <div class="navigator flex">
+            <a href="../../index.html" class="logo">Lightning   <span class="sm-none">Network</span></a>
+                <a class="close-menu">×</a>
+                <ul class="flex">
+                    <li><a href="#" class="link-item">Markets</a></li>
+                    <li><a href="#" class="link-item">Trade</a></li>
+                    <li><a href="#" class="link-item">Derivatives</a></li>
+                    <li><a href="#" class="link-item">Finance</a></li>
+                </ul>
+                <ul id="toolbar">
+                    <li><a href="#" class="link-item">Wallet</a></li>
+                    <li><a href="#" class="link-item">Orders</a></li>
+                    <li><a href="#" id="user"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 60 60" xml:space="preserve">
+                            <path d="M60,30C60,13.458,46.542,0,30,0S0,13.458,0,30c0,6.142,1.858,11.857,5.038,16.618l-0.002,0.021l0.207,0.303
+                                c0.18,0.263,0.374,0.512,0.562,0.768c0.076,0.104,0.151,0.209,0.229,0.313c0.238,0.316,0.483,0.626,0.732,0.931
+                                c0.072,0.088,0.145,0.175,0.218,0.262c1.157,1.385,2.427,2.653,3.793,3.794c0.083,0.069,0.165,0.139,0.249,0.208
+                                c0.298,0.243,0.599,0.481,0.906,0.712c0.124,0.094,0.25,0.185,0.375,0.277c0.292,0.214,0.584,0.426,0.884,0.629
+                                c0.16,0.109,0.326,0.211,0.488,0.317c0.416,0.27,0.836,0.531,1.264,0.779c0.298,0.174,0.597,0.347,0.902,0.511
+                                c0.184,0.099,0.372,0.191,0.558,0.286c0.325,0.166,0.651,0.327,0.982,0.481c0.167,0.077,0.334,0.153,0.502,0.227
+                                c0.383,0.17,0.771,0.331,1.162,0.485c0.121,0.048,0.241,0.097,0.363,0.144c1.073,0.406,2.175,0.754,3.302,1.036
+                                c0.046,0.012,0.093,0.021,0.139,0.032c0.498,0.122,1.001,0.231,1.509,0.328c0.135,0.026,0.27,0.049,0.405,0.073
+                                c0.424,0.075,0.85,0.141,1.28,0.198c0.164,0.022,0.327,0.043,0.491,0.063c0.419,0.048,0.841,0.086,1.265,0.117
+                                c0.158,0.012,0.315,0.027,0.473,0.036C28.847,59.979,29.421,60,30,60s1.153-0.021,1.724-0.053c0.158-0.009,0.315-0.025,0.473-0.036
+                                c0.424-0.031,0.846-0.068,1.265-0.117c0.164-0.019,0.328-0.041,0.491-0.063c0.43-0.057,0.856-0.123,1.28-0.198
+                                c0.135-0.024,0.27-0.047,0.405-0.073c0.508-0.097,1.011-0.206,1.509-0.328c0.046-0.011,0.093-0.021,0.139-0.032
+                                c1.127-0.282,2.229-0.63,3.302-1.036c0.122-0.046,0.243-0.096,0.365-0.144c0.391-0.154,0.778-0.315,1.161-0.484
+                                c0.168-0.074,0.336-0.15,0.502-0.227c0.331-0.154,0.658-0.315,0.982-0.481c0.186-0.095,0.374-0.188,0.558-0.286
+                                c0.305-0.164,0.603-0.337,0.902-0.511c0.428-0.249,0.849-0.509,1.264-0.779c0.163-0.106,0.328-0.208,0.488-0.317
+                                c0.299-0.203,0.591-0.415,0.884-0.629c0.125-0.092,0.251-0.183,0.375-0.277c0.306-0.231,0.608-0.469,0.906-0.712
+                                c0.084-0.069,0.166-0.139,0.249-0.208c1.367-1.142,2.636-2.409,3.794-3.795c0.073-0.087,0.145-0.173,0.216-0.261
+                                c0.249-0.305,0.494-0.615,0.732-0.931c0.078-0.103,0.152-0.208,0.229-0.313c0.187-0.256,0.382-0.505,0.562-0.768l0.207-0.303
+                                l-0.002-0.021C58.142,41.857,60,36.142,60,30z M58,30c0,4.972-1.309,9.642-3.591,13.694C52.697,38.02,47.458,34,41.311,34h-0.896
+                                h-5.049C35.164,34,35,33.836,35,33.635V32.99c0-0.183,0.149-0.303,0.276-0.352c6.439-2.421,10.455-12.464,9.613-19.488
+                                c-0.439-3.658-2.251-6.927-4.883-9.295C50.517,7.892,58,18.086,58,30z M52.538,46.59c-0.081,0.109-0.162,0.217-0.244,0.325
+                                c-0.223,0.293-0.448,0.584-0.682,0.868c-0.024,0.029-0.049,0.057-0.073,0.086c-0.808,0.972-1.681,1.888-2.611,2.743
+                                c-0.055,0.051-0.11,0.103-0.166,0.153c-0.277,0.251-0.561,0.495-0.848,0.735c-0.09,0.075-0.181,0.149-0.272,0.223
+                                c-0.279,0.227-0.56,0.45-0.847,0.666c-0.097,0.073-0.197,0.142-0.295,0.214c-0.165,0.121-0.332,0.238-0.499,0.355V48h-2v6.233
+                                c-0.039,0.023-0.078,0.045-0.118,0.068c-0.255,0.146-0.509,0.291-0.768,0.428c-0.177,0.094-0.357,0.185-0.537,0.276
+                                c-0.302,0.152-0.606,0.299-0.913,0.44c-0.15,0.069-0.299,0.138-0.45,0.204c-0.385,0.168-0.774,0.328-1.166,0.479
+                                c-0.081,0.031-0.16,0.065-0.241,0.095c-1,0.374-2.022,0.692-3.063,0.95c-0.075,0.019-0.151,0.034-0.226,0.052
+                                c-0.431,0.103-0.866,0.197-1.303,0.279c-0.13,0.025-0.26,0.047-0.391,0.07c-0.388,0.068-0.778,0.127-1.17,0.178
+                                c-0.151,0.02-0.302,0.041-0.454,0.058c-0.388,0.045-0.778,0.078-1.17,0.107c-0.145,0.01-0.289,0.025-0.435,0.033
+                                C31.065,57.982,30.534,58,30,58s-1.065-0.018-1.595-0.048c-0.146-0.008-0.29-0.023-0.435-0.033c-0.391-0.029-0.782-0.062-1.17-0.107
+                                c-0.152-0.017-0.303-0.038-0.454-0.058c-0.392-0.052-0.782-0.111-1.17-0.178c-0.13-0.023-0.261-0.045-0.391-0.07
+                                c-0.437-0.083-0.872-0.176-1.303-0.28c-0.075-0.018-0.15-0.034-0.225-0.052c-1.041-0.259-2.064-0.576-3.064-0.95
+                                c-0.081-0.03-0.161-0.064-0.241-0.095c-0.392-0.151-0.78-0.311-1.165-0.479c-0.151-0.066-0.301-0.135-0.451-0.204
+                                c-0.307-0.141-0.611-0.288-0.913-0.44c-0.18-0.091-0.36-0.181-0.537-0.276c-0.259-0.137-0.514-0.283-0.768-0.428
+                                c-0.039-0.023-0.079-0.045-0.118-0.068V48h-2v4.958c-0.168-0.117-0.335-0.235-0.499-0.355c-0.098-0.072-0.198-0.141-0.295-0.214
+                                c-0.287-0.216-0.568-0.439-0.846-0.665c-0.092-0.074-0.183-0.149-0.274-0.224c-0.287-0.239-0.57-0.483-0.847-0.734
+                                c-0.056-0.051-0.112-0.104-0.168-0.155c-0.93-0.855-1.803-1.77-2.61-2.742c-0.024-0.029-0.049-0.057-0.073-0.086
+                                c-0.234-0.284-0.459-0.575-0.682-0.868c-0.082-0.108-0.164-0.216-0.244-0.325c-0.12-0.163-0.236-0.329-0.352-0.495
+                                C7.893,40.313,12.804,36,18.689,36h2.896L30,44.414L38.414,36h2.896c5.885,0,10.797,4.313,11.58,10.095
+                                C52.774,46.261,52.659,46.427,52.538,46.59z M25.491,30.791C20.709,29.022,17,20.85,17,15c0-0.128,0.015-0.253,0.018-0.38
+                                l0.732-0.903c1.651-1.964,4.469-2.526,7.012-1.4C25.785,12.771,26.874,13,28,13c2.971,0,5.64-1.615,7.028-4.184
+                                c3.182,1.045,6.022,3.015,7.943,5.498c0.293,6.1-3.294,14.533-8.398,16.452C33.617,31.126,33,31.999,33,32.99v0.645
+                                C33,34.938,34.062,36,35.365,36h0.221L30,41.586L24.414,36h0.221C25.938,36,27,34.938,27,33.635V33
+                                C27,32.014,26.395,31.126,25.491,30.791z M30.04,2.002c0.012,0,0.022,0,0.033,0c0.489,0.003,0.97,0.03,1.43,0.083
+                                c4.959,0.553,9.127,4.005,10.752,8.589c-2.115-1.842-4.708-3.26-7.497-4.027l-0.86-0.236l-0.333,0.826C32.644,9.522,30.46,11,28,11
+                                c-0.845,0-1.662-0.172-2.427-0.511c-2.766-1.224-5.786-0.893-8.017,0.73c0.613-2.026,1.72-3.882,3.261-5.42
+                                C23.271,3.35,26.53,2.002,30.04,2.002z M19.982,3.86c-0.193,0.174-0.392,0.338-0.578,0.523C16.564,7.218,15,10.987,15,15
+                                c0,6.629,4.19,15.593,9.797,17.666C24.916,32.711,25,32.848,25,33v0.635C25,33.836,24.836,34,24.635,34h-5.049h-0.896
+                                c-6.148,0-11.387,4.02-13.099,9.694C3.309,39.642,2,34.972,2,30C2,18.09,9.477,7.9,19.982,3.86z"/>
+                            </svg></a></li>
+                    <li><a href="#" id="notifications"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 55 55" xml:space="preserve">
+                        <g>
+                            <path d="M51.376,45.291C46.716,40.66,44.354,35.179,44.354,29v-8.994c0.043-6.857-4.568-11.405-8.53-13.216
+                                c-1.135-0.519-2.305-0.919-3.494-1.216V5c0-2.757-2.243-5-5-5s-5,2.243-5,5v0.661c-1.071,0.289-2.124,0.666-3.146,1.138
+                                C14.805,8.817,10.369,13.681,10.329,20v9c0,6.388-2.256,11.869-6.705,16.291c-0.265,0.264-0.361,0.653-0.249,1.01
+                                s0.415,0.621,0.784,0.685l9.491,1.639c1.768,0.305,3.396,0.555,4.945,0.761C20.341,52.806,23.768,55,27.512,55
+                                c3.745,0,7.173-2.196,8.917-5.618c1.543-0.205,3.163-0.454,4.921-0.758l9.49-1.639c0.369-0.063,0.671-0.328,0.784-0.685
+                                C51.737,45.944,51.641,45.555,51.376,45.291z M24.329,5c0-1.654,1.346-3,3-3s3,1.346,3,3v0.182c-1.993-0.286-4.015-0.274-6,0.047V5
+                                z M27.512,53c-2.532,0-4.898-1.258-6.417-3.315c2.235,0.23,4.321,0.346,6.406,0.346c2.093,0,4.186-0.116,6.43-0.349
+                                C32.411,51.741,30.044,53,27.512,53z M41.01,46.653c-1.919,0.331-3.678,0.6-5.34,0.812c-0.002,0-0.004,0-0.006,0
+                                c-0.732,0.093-1.444,0.174-2.141,0.244c-0.007,0.001-0.015,0.001-0.022,0.002c-0.637,0.064-1.26,0.115-1.876,0.16
+                                c-0.117,0.009-0.233,0.016-0.35,0.024c-0.534,0.035-1.062,0.063-1.587,0.083c-0.108,0.004-0.216,0.01-0.324,0.013
+                                c-1.244,0.042-2.471,0.042-3.714,0.001c-0.11-0.004-0.222-0.009-0.332-0.014c-0.518-0.02-1.04-0.047-1.567-0.082
+                                c-0.124-0.008-0.248-0.016-0.373-0.025c-0.6-0.043-1.207-0.094-1.828-0.155c-0.022-0.002-0.043-0.004-0.064-0.006
+                                c-0.692-0.069-1.399-0.15-2.126-0.242c-0.003,0-0.006,0-0.009,0c-1.668-0.211-3.433-0.482-5.361-0.814L6.329,45.33
+                                c3.983-4.554,6-10.038,6-16.33v-8.994c0.034-5.435,3.888-9.637,7.691-11.391c1.131-0.521,2.304-0.91,3.497-1.183
+                                c0.01-0.002,0.021-0.001,0.031-0.003c2.464-0.554,5.087-0.579,7.58-0.068c0.013,0.003,0.026-0.003,0.039-0.001
+                                c1.304,0.272,2.588,0.684,3.825,1.249c3.689,1.687,7.396,5.861,7.361,11.392v9c0,6.033,2.175,11.643,6.313,16.331L41.01,46.653z"/>
+                            <path d="M33.746,11.338c-3.875-1.771-8.62-1.773-12.469,0.002c-2.195,1.012-5.918,3.973-5.948,8.654
+                                c-0.003,0.552,0.441,1.002,0.994,1.006c0.002,0,0.004,0,0.006,0c0.549,0,0.997-0.443,1-0.994c0.023-3.677,3.019-6.035,4.785-6.85
+                                c3.331-1.537,7.446-1.533,10.799,0c0.502,0.23,1.096,0.009,1.326-0.493C34.469,12.16,34.248,11.567,33.746,11.338z"/>
+                        </g>
+                    </svg></a></li>
+                    <li><a href="#" class="link-item">English | USD</a></li>
+                    <li><a href="#" id="setting"><svg id="setting-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                 viewBox="0 0 54 54" xml:space="preserve">
+                        <g>
+                            <path d="M27,13c-7.72,0-14,6.28-14,14s6.28,14,14,14s14-6.28,14-14S34.72,13,27,13z M27,39c-6.617,0-12-5.383-12-12s5.383-12,12-12
+                                s12,5.383,12,12S33.617,39,27,39z"/>
+                            <path d="M51.22,21h-2.018c-0.515-1.912-1.272-3.742-2.26-5.457l1.426-1.426c0.525-0.525,0.814-1.224,0.814-1.966
+                                c0-0.743-0.289-1.441-0.814-1.967l-4.553-4.553c-1.05-1.049-2.881-1.051-3.933,0l-1.426,1.426C36.74,6.07,34.911,5.313,33,4.798
+                                V2.78C33,1.247,31.753,0,30.22,0H23.78C22.247,0,21,1.247,21,2.78v2.018c-1.911,0.515-3.74,1.272-5.457,2.26l-1.426-1.426
+                                c-1.051-1.052-2.883-1.05-3.933,0l-4.553,4.553c-0.525,0.525-0.814,1.224-0.814,1.967c0,0.742,0.289,1.44,0.814,1.966l1.426,1.426
+                                C6.07,17.258,5.312,19.088,4.798,21H2.78C1.247,21,0,22.247,0,23.78v6.439C0,31.753,1.247,33,2.78,33h2.018
+                                c0.515,1.911,1.272,3.74,2.26,5.457l-1.426,1.426c-0.525,0.525-0.814,1.224-0.814,1.966c0,0.743,0.289,1.441,0.814,1.967
+                                l4.553,4.553c1.05,1.051,2.882,1.052,3.933,0l1.426-1.426c1.717,0.987,3.546,1.745,5.457,2.26v2.018c0,1.533,1.247,2.78,2.78,2.78
+                                h6.439c1.533,0,2.78-1.247,2.78-2.78v-2.018c1.911-0.515,3.74-1.272,5.457-2.26l1.426,1.426c1.052,1.052,2.882,1.05,3.933,0
+                                l4.553-4.553c0.525-0.525,0.814-1.224,0.814-1.967c0-0.742-0.289-1.44-0.814-1.966l-1.426-1.426
+                                c0.987-1.717,1.745-3.546,2.26-5.457h2.018c1.533,0,2.78-1.247,2.78-2.78V23.78C54,22.247,52.753,21,51.22,21z M52,30.22
+                                C52,30.65,51.65,31,51.22,31h-3.592l-0.18,0.773c-0.521,2.237-1.399,4.36-2.613,6.311l-0.42,0.674l2.539,2.539
+                                c0.305,0.305,0.305,0.8,0,1.104l-4.553,4.553c-0.304,0.304-0.799,0.306-1.104,0l-2.539-2.539l-0.674,0.42
+                                c-1.95,1.214-4.073,2.093-6.311,2.613L31,47.628v3.592C31,51.65,30.65,52,30.22,52H23.78C23.35,52,23,51.65,23,51.22v-3.592
+                                l-0.773-0.18c-2.237-0.521-4.36-1.399-6.311-2.613l-0.674-0.42l-2.539,2.539c-0.306,0.306-0.801,0.304-1.104,0l-4.553-4.553
+                                c-0.305-0.305-0.305-0.8,0-1.104l2.539-2.539l-0.42-0.674c-1.214-1.95-2.093-4.073-2.613-6.311L6.372,31H2.78
+                                C2.35,31,2,30.65,2,30.22V23.78C2,23.35,2.35,23,2.78,23h3.592l0.18-0.773c0.521-2.238,1.399-4.361,2.613-6.311l0.42-0.674
+                                l-2.539-2.539c-0.305-0.305-0.305-0.8,0-1.104l4.553-4.553c0.304-0.304,0.799-0.306,1.104,0l2.539,2.539l0.674-0.42
+                                c1.95-1.214,4.073-2.093,6.311-2.613L23,6.372V2.78C23,2.35,23.35,2,23.78,2h6.439C30.65,2,31,2.35,31,2.78v3.592l0.773,0.18
+                                c2.237,0.521,4.36,1.399,6.311,2.613l0.674,0.42l2.539-2.539c0.306-0.306,0.801-0.304,1.104,0l4.553,4.553
+                                c0.305,0.305,0.305,0.8,0,1.104l-2.539,2.539l0.42,0.674c1.214,1.949,2.093,4.072,2.613,6.311L47.628,23h3.592
+                                C51.65,23,52,23.35,52,23.78V30.22z"/>
+                            <path d="M27,17c-5.514,0-10,4.486-10,10s4.486,10,10,10s10-4.486,10-10S32.514,17,27,17z M27,35c-4.411,0-8-3.589-8-8s3.589-8,8-8
+                                s8,3.589,8,8S31.411,35,27,35z"/>
+                        </g>
+                    </svg></a></li>
+                </ul>
+            <a href="#" class="btn btn-outline btn-sm menu">Menu</a>
+        </div>
+        <div class="config toolbar d-none">
+            <div class="config-block theme">
+                <div class="name">Theme</div>
+                <div class="options modes">
+                    <a href="#" class="mode day"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+	 viewBox="0 0 219.786 219.786" xml:space="preserve">
+<g>
+	<path d="M109.881,183.46c-4.142,0-7.5,3.358-7.5,7.5v21.324c0,4.142,3.358,7.5,7.5,7.5c4.143,0,7.5-3.358,7.5-7.5V190.96
+		C117.381,186.817,114.023,183.46,109.881,183.46z"/>
+    <path d="M109.881,36.329c4.143,0,7.5-3.358,7.5-7.5V7.503c0-4.142-3.357-7.5-7.5-7.5c-4.142,0-7.5,3.358-7.5,7.5v21.326
+		C102.381,32.971,105.739,36.329,109.881,36.329z"/>
+    <path d="M47.269,161.909l-15.084,15.076c-2.93,2.928-2.931,7.677-0.003,10.606c1.465,1.465,3.385,2.198,5.305,2.198
+		c1.919,0,3.837-0.732,5.302-2.195l15.084-15.076c2.93-2.928,2.931-7.677,0.003-10.606
+		C54.946,158.982,50.198,158.982,47.269,161.909z"/>
+    <path d="M167.208,60.067c1.919,0,3.838-0.732,5.303-2.196l15.082-15.076c2.929-2.929,2.93-7.677,0.002-10.607
+		c-2.929-2.93-7.677-2.931-10.607-0.001l-15.082,15.076c-2.929,2.928-2.93,7.677-0.002,10.606
+		C163.368,59.335,165.288,60.067,167.208,60.067z"/>
+    <path d="M36.324,109.895c0-4.142-3.358-7.5-7.5-7.5H7.5c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h21.324
+		C32.966,117.395,36.324,114.037,36.324,109.895z"/>
+    <path d="M212.286,102.395h-21.334c-4.143,0-7.5,3.358-7.5,7.5c0,4.142,3.357,7.5,7.5,7.5h21.334c4.143,0,7.5-3.358,7.5-7.5
+		C219.786,105.754,216.429,102.395,212.286,102.395z"/>
+    <path d="M47.267,57.871c1.464,1.464,3.384,2.196,5.303,2.196c1.919,0,3.839-0.732,5.303-2.196c2.929-2.929,2.929-7.678,0-10.607
+		L42.797,32.188c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L47.267,57.871z"/>
+    <path d="M172.52,161.911c-2.929-2.929-7.678-2.93-10.607-0.001c-2.93,2.929-2.93,7.678-0.001,10.606l15.074,15.076
+		c1.465,1.465,3.384,2.197,5.304,2.197c1.919,0,3.839-0.732,5.303-2.196c2.93-2.929,2.93-7.678,0.001-10.606L172.52,161.911z"/>
+    <path d="M109.889,51.518c-32.187,0-58.373,26.188-58.373,58.377c0,32.188,26.186,58.375,58.373,58.375
+		c32.19,0,58.378-26.187,58.378-58.375C168.267,77.706,142.078,51.518,109.889,51.518z M109.889,153.27
+		c-23.916,0-43.373-19.458-43.373-43.375c0-23.918,19.457-43.377,43.373-43.377c23.919,0,43.378,19.459,43.378,43.377
+		C153.267,133.812,133.808,153.27,109.889,153.27z"/>
+</g>
+</svg></a>
+                    <a href="#" class="mode night active"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+	 viewBox="0 0 312.999 312.999" xml:space="preserve">
+<g>
+	<g>
+		<path d="M305.6,178.053c-3.2-0.8-6.4,0-9.2,2c-10.4,8.8-22.4,16-35.6,20.8c-12.4,4.8-26,7.2-40.4,7.2c-32.4,0-62-13.2-83.2-34.4
+			c-21.2-21.2-34.4-50.8-34.4-83.2c0-13.6,2.4-26.8,6.4-38.8c4.4-12.8,10.8-24.4,19.2-34.4c3.6-4.4,2.8-10.8-1.6-14.4
+			c-2.8-2-6-2.8-9.2-2c-34,9.2-63.6,29.6-84.8,56.8c-20.4,26.8-32.8,60-32.8,96.4c0,43.6,17.6,83.2,46.4,112s68.4,46.4,112,46.4
+			c36.8,0,70.8-12.8,98-34c27.6-21.6,47.6-52.4,56-87.6C314.4,184.853,311.2,179.253,305.6,178.053z M244.4,261.653
+			c-23.2,18.4-52.8,29.6-85.2,29.6c-38,0-72.4-15.6-97.2-40.4c-24.8-24.8-40.4-59.2-40.4-97.2c0-31.6,10.4-60.4,28.4-83.6
+			c12.4-16,28-29.2,46-38.4c-2,4.4-4,8.8-5.6,13.6c-5.2,14.4-7.6,29.6-7.6,45.6c0,38,15.6,72.8,40.4,97.6s59.6,40.4,97.6,40.4
+			c16.8,0,32.8-2.8,47.6-8.4c5.2-2,10.4-4,15.2-6.4C274,232.453,260.8,248.853,244.4,261.653z"/>
+	</g>
+</g>
+</svg></a>
+                </div>
+            </div>
+            <div class="config-block color">
+                <div class="name">Color Settings</div>
+                <div class="options">
+                    <div class="horizontal p-in">
+                        <div class="traditional vertical">
+                            <input id="traditional" class="radio" type="radio" name="colors" value="traditional" checked>
+                            <label for="traditional" class="radio-label"></label>
+                            <label for="traditional" class="radio-name">Traditional</label>
+                        </div>
+                        <div class="colors">
+                            <div class="color-box sell-orig"></div>
+                            <div class="color-box buy-orig"></div>
+                        </div>
+                    </div>
+                    <div class="horizontal p-in">
+                        <div class="new vertical">
+                            <input id="new" class="radio" type="radio" name="colors" value="new">
+                            <label for="new" class="radio-label"></label>
+                            <label for="new" class="radio-name">New</label>
+                        </div>
+                        <div class="colors">
+                            <div class="color-box sell-new"></div>
+                            <div class="color-box buy-new"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="config-block layout">
+               <div class="name">Customize Layout</div>
+                <div class="customize horizontal">
+                    <div>Market</div><div><input id="cb_market" class="checkbox" type="checkbox" checked><label for="cb_market" class="checkbox-label configs" data-target="#market"></label></div>
+                </div>
+                <div class="customize horizontal">
+                    <div>Chart</div><div><input id="cb_chart" class="checkbox" type="checkbox" checked><label for="cb_chart" class="checkbox-label configs" data-target="#chart"></label></div>
+                </div>
+                <div class="customize horizontal">
+                    <div>Order Book</div><div><input id="cb_order_book" class="checkbox" type="checkbox" checked><label for="cb_order_book" class="checkbox-label configs" data-target="#order-book"></label></div>
+                </div>
+                <div class="customize horizontal">
+                    <div>Open Orders</div><div><input id="cb_open_orders" class="checkbox" type="checkbox" checked><label for="cb_open_orders" class="checkbox-label configs" data-target="#open-orders"></label></div>
+                </div>
+                <div class="customize horizontal">
+                    <div>Support Chat</div><div><input id="cb_chat" class="checkbox" type="checkbox" checked><label for="cb_chat" class="checkbox-label"></label></div>
+                </div>
+               </div>
+            <div class="signature">Lightning</div>
+        </div>
+        <div class="lang d-none">
+        </div>
+    </div>
+</nav>
+
+<div id="root">
+    <div id="info" class="layout-main info">
+        <div class="layout-header pair-name">BTC/USD</div>
+        <div class="info-price info-block">1903.03</div>
+        <div class="info-block">
+            24H Change
+        </div>
+        <div class="info-block">
+            24H Low
+        </div>
+        <div class="info-block">
+            24H Change
+        </div>
+        <div class="info-block">
+            24H Volume
+        </div>
+    </div>
+    <div id="market" class="layout-main market">
+        <div class="layout-header">Market</div>
+        <div class="market-group">
+            <div class="market-btn faded">BTC</div>
+            <div class="market-btn faded">ETH</div>
+            <div class="market-btn faded">USD</div>
+            <div class="market-btn faded">EUR</div>
+        </div>
+        <div class="search-group">
+            <input id="search" class="order-input" type="text" placeholder="Search">
+            <label for="search">Markets</label>
+        </div>
+        <div class="sort-group">
+            <div class="pair">Pair</div>
+            <div class="last-price">Last Price</div>
+            <div class="change">Change</div>
+        </div>
+        <div class="pair-container"></div>
+        <div class="currency-info">
+            <div class="layout-header">
+                <div class="currency-icon bg"></div>
+                <div class="currency-name">Bitcoin</div>
+            </div>
+            <div class="data-container">
+                <div class="data-group fz-12 horizontal">
+                    <div class="cap faded-text">Market Cap</div><div class="cap-val">$354 371 495 319</div>
+                </div>
+                <div class="data-group fz-12 horizontal">
+                    <div class="c-supply faded-text">Circulating Supply</div><div class="c-s-val">18 559 987</div>
+                </div>
+                <div class="data-group fz-12 horizontal">
+                    <div class="max-supply faded-text">Max Supply</div><div class="m-s-val">21 000 000</div>
+                </div>
+                <div class="data-group fz-12 horizontal">
+                    <div class="total-supply faded-text">Total Supply</div><div class="t-s-val">18 559 987</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="chart" class="layout-main chart">
+        <div class="layout-header">CHART</div>
+        <div class="chart-group">
+            <div class="chart-tool">Time</div>
+            <div class="chart-tool">15s</div>
+            <div class="chart-tool">1m</div>
+            <div class="chart-tool">1h</div>
+            <div class="chart-tool">1D</div>
+            <div class="chart-tool">1W</div>
+            <div class="chart-tool faded">1M</div>
+            <div class="chart-tool">1Y</div>
+        </div>
+        <div class="chart-group chart-data-group">
+            <div class="chart-data fz-12">2020/12/02 21:02</div>
+            <div class="chart-data fz-12">O: <span class="buy-col">1903.03</span></div>
+            <div class="chart-data fz-12">H: <span class="buy-col">1903.03</span></div>
+            <div class="chart-data fz-12">L: <span class="buy-col">1903.03</span></div>
+            <div class="chart-data fz-12">C: <span class="buy-col">1903.03</span></div>
+            <div class="chart-data fz-12">CHANGE: <span class="buy-col">+7.1%</span></div>
+            <div class="chart-data fz-12">AMPLITUDE: <span class="buy-col">+0.17%</span></div>
+        </div>
+        <canvas id="chart-canvas"></canvas>
+        <div class="chart-group horizontal">
+            <div class="chart-tool faded">MA</div>
+            <div class="chart-tool">EMA</div>
+            <div class="chart-tool">BOLL</div>
+            <div class="chart-tool faded">VOL</div>
+            <div class="chart-tool">MACD</div>
+            <div class="chart-tool">RSI</div>
+            <div class="chart-tool faded">KDJ</div>
+        </div>
+    </div>
+    <div id="order-book" class="layout-main order-book">
+        <div class="layout-header">Order Book</div>
+        <div class="order-info">
+            <div class="price-text faded-text">Price<span>(USD)</span></div>
+            <div class="amount-text faded-text">Amount<span>(BTC)</span></div>
+            <div class="total-text faded-text">Total</div>
+        </div>
+        <div class="sell-orders"></div>
+        <div class="order-delimiter">
+            <div>1903.03 <span>$</span></div>
+        </div>
+        <div class="buy-orders">
+        </div>
+    </div>
+    <div id="place-order" class="layout-main place-order">
+        <div class="order-head horizontal">
+            <div class="layout-header">Place Order</div>
+            <div class="more">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 60 60" xml:space="preserve">
+	                <g>
+		                <path d="M30,16c4.411,0,8-3.589,8-8s-3.589-8-8-8s-8,3.589-8,8S25.589,16,30,16z M30,2c3.309,0,6,2.691,6,6s-2.691,6-6,6
+			            s-6-2.691-6-6S26.691,2,30,2z"/>
+                        <path d="M30,44c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S34.411,44,30,44z M30,58c-3.309,0-6-2.691-6-6s2.691-6,6-6
+			            s6,2.691,6,6S33.309,58,30,58z"/>
+                        <path d="M30,22c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S34.411,22,30,22z M30,36c-3.309,0-6-2.691-6-6s2.691-6,6-6
+			            s6,2.691,6,6S33.309,36,30,36z"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="btn-group">
+            <div class="order-btn buy buy-bg">BUY</div><div class="order-btn sell faded">SELL</div>
+        </div>
+        <div class="limit-group horizontal">
+            <div class="limit self active">Limit</div>
+            <div class="limit market">Market</div>
+            <div class="limit stop-limit">Stop Limit</div>
+        </div>
+        <div class="order-form">
+            <div class="balance-group">
+                <svg class="balance-icon" viewBox="0 0 507.246 507.246" xmlns="http://www.w3.org/2000/svg"><path d="m457.262 89.821c-2.734-35.285-32.298-63.165-68.271-63.165h-320.491c-37.771 0-68.5 30.729-68.5 68.5v316.934c0 37.771 30.729 68.5 68.5 68.5h370.247c37.771 0 68.5-30.729 68.5-68.5v-256.333c-.001-31.354-21.184-57.836-49.985-65.936zm-388.762-31.165h320.492c17.414 0 32.008 12.261 35.629 28.602h-356.121c-13.411 0-25.924 3.889-36.5 10.577v-2.679c0-20.126 16.374-36.5 36.5-36.5zm370.246 389.934h-370.246c-20.126 0-36.5-16.374-36.5-36.5v-256.333c0-20.126 16.374-36.5 36.5-36.5h370.247c20.126 0 36.5 16.374 36.5 36.5v55.838h-102.026c-40.43 0-73.322 32.893-73.322 73.323s32.893 73.323 73.322 73.323h102.025v53.849c0 20.126-16.374 36.5-36.5 36.5zm36.5-122.349h-102.025c-22.785 0-41.322-18.537-41.322-41.323s18.537-41.323 41.322-41.323h102.025z"/><circle cx="379.16" cy="286.132" r="16.658"/></svg>
+                <div class="user-balance faded-text">0.00000000 <span>BTC</span></div>
+            </div>
+            <div class="order-values">
+                <div class="price input-group faded">
+                    <div>
+                        <label for="price" class="faded-text">Price</label>
+                    </div>
+                    <input id="price" class="order-input faded" type="number">
+                    <div>
+                        <label for="price" class="faded-text">USD</label>
+                    </div>
+                </div>
+                <div class="amount input-group faded">
+                    <div>
+                        <label for="amount" class="faded-text">Amount</label>
+                    </div>
+                    <input id="amount" class="order-input faded" type="number">
+                    <div>
+                        <label for="amount" class="faded-text">BTC</label>
+                    </div>
+                </div>
+
+                <div class="quick-values horizontal">
+                    <div class="p-group">
+                        <div class="p-visual faded"></div>
+                        <div id="p25" class="value faded-text">25%</div>
+                    </div>
+                    <div class="p-group">
+                        <div class="p-visual faded"></div>
+                        <div id="p50" class="value faded-text">50%</div>
+                    </div>
+                   <div class="p-group">
+                       <div class="p-visual faded"></div>
+                       <div id="p75" class="value faded-text">75%</div>
+                   </div>
+                    <div class="p-group">
+                        <div class="p-visual faded"></div>
+                        <div id="p100" class="value faded-text">100%</div>
+                    </div>
+                </div>
+                <div class="total input-group faded">
+                    <div>
+                        <label for="total" class="faded-text">Total</label>
+                    </div>
+                    <input id="total"  class="order-input faded" type="number">
+                    <div>
+                        <label for="total" class="faded-text">USD</label>
+                    </div>
+                </div>
+                <button id="buy-btn" class="btn buy-btn buy-bg">BUY BTC</button>
+            </div>
+        </div>
+        <div class="assets">
+            <div class="layout-header">Assets</div>
+            <div class="user-assets">
+                <div class="asset-func deposit faded">Deposit</div>
+                <div class="asset-func withdraw faded">Withdraw</div>
+            </div>
+            <div class="assets-group">
+                <div class="available">
+                    <div class="currency">BTC</div>
+                    <div class="av-text faded-text">Available</div>
+                    <div class="av" id="balance_btc">0.69098568</div>
+                </div>
+                <div class="available">
+                    <div class="currency">USD</div>
+                    <div class="av-text faded-text">Available</div>
+                    <div class="av" id="balance_usd">69000.07$</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layout-main" id="open-orders">
+        <div class="headers">
+            <div class="layout-header underline active">Open Orders</div>
+            <div class="layout-header underline faded-text">Order History</div>
+            <div class="layout-header underline faded-text">Trade History</div>
+            <div class="layout-header underline faded-text">Funds</div>
+        </div>
+        <div class="open-orders-group">
+            <div class="open-orders-info faded-text fz-12">Date</div>
+            <div class="open-orders-info faded-text fz-12">Pair</div>
+            <div class="open-orders-info faded-text fz-12">Type</div>
+            <div class="open-orders-info faded-text fz-12">Side</div>
+            <div class="open-orders-info faded-text fz-12">Price</div>
+            <div class="open-orders-info faded-text fz-12">Amount</div>
+            <div class="open-orders-info faded-text fz-12">Filled</div>
+            <div class="open-orders-info faded-text fz-12">Total</div>
+            <div class="open-orders-info faded-text fz-12">Trigger Conditions</div>
+            <div id="cancel-orders" class="open-orders-info faded-text fz-12 faded">Cancell All</div>
+        </div>
+    </div>
+</div>
+<div id="chat">
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+         viewBox="0 0 512 512" xml:space="preserve">
+            <g>
+                <g>
+                    <path d="M304,96H112c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16h192c8.832,0,16-7.168,16-16C320,103.168,312.832,96,304,96z"
+                    />
+                </g>
+            </g>
+        <g>
+                <g>
+                    <path d="M240,160H112c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16h128c8.832,0,16-7.168,16-16
+                        C256,167.168,248.832,160,240,160z"/>
+                </g>
+            </g>
+        <g>
+                <g>
+                    <path d="M352,0H64C28.704,0,0,28.704,0,64v320c0,6.208,3.584,11.872,9.216,14.496C11.36,399.488,13.696,400,16,400
+                        c3.68,0,7.328-1.28,10.24-3.712L117.792,320H352c35.296,0,64-28.704,64-64V64C416,28.704,387.296,0,352,0z M384,256
+                        c0,17.632-14.336,32-32,32H112c-3.744,0-7.36,1.312-10.24,3.712L32,349.856V64c0-17.632,14.336-32,32-32h288
+                        c17.664,0,32,14.368,32,32V256z"/>
+                </g>
+            </g>
+        <g>
+                <g>
+                    <path d="M448,128c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16c17.664,0,32,14.368,32,32v270.688l-54.016-43.2
+                        c-2.816-2.24-6.368-3.488-9.984-3.488H192c-17.664,0-32-14.368-32-32v-16c0-8.832-7.168-16-16-16c-8.832,0-16,7.168-16,16v16
+                        c0,35.296,28.704,64,64,64h218.368l75.616,60.512C488.896,510.816,492.448,512,496,512c2.336,0,4.704-0.512,6.944-1.568
+                        C508.48,507.744,512,502.144,512,496V192C512,156.704,483.296,128,448,128z"/>
+                </g>
+            </g>
+        </svg>
+    <div id="support">Support</div>
+</div>
+
+
+<script src="./../js/trade.js" type="module"></script>
+<script src="js/markets.js" type="module"></script>
+<script src="js/order_book.js" type="module"></script>
+<script src="js/open_orders.js" type="module"></script>
+<script src="js/place_order.js" type="module"></script>
+<!-- CHART JS -->
+<script src="https://cdn.jsdelivr.net/npm/luxon@1.24.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0-beta.3/dist/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@0.2.1"></script>
+<script src="./js/chartjs-chart-financial.js" type="text/javascript"></script>
+<script src="./js/chart-config.js" type="text/javascript"></script>
+</body>
+</html>

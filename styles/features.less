@@ -1,0 +1,44 @@
+@import "_vars";
+#features{
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.features-group{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.features-item{
+  margin: 16px 8px;
+  display: flex;
+  align-items: center;
+  max-width: 364px;
+  color: @dark;
+  &:hover svg{
+    fill: @main;
+  }
+  &:hover #percentage{
+    stroke: @main;
+  }
+  &:hover .sub-header{
+    text-decoration: underline;
+    color: @main;
+  }
+  & svg{
+    fill: @dark;
+    height: 64px;
+    width: 64px;
+  }
+}
+.feature-text{
+  margin-left: 8px;
+  width: 320px;
+}
+#percentage{
+  height: 64px;
+  width: 64px;
+  fill: transparent;
+  stroke: @dark;
+}

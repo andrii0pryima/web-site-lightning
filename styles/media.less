@@ -1,0 +1,240 @@
+@import "_vars";
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px){
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+  .header-main{
+    .header-form{
+      .btn-main, #header-input{
+        font-size: 18px;
+      }
+    }
+  }
+  .mobi{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+  #nav{
+    background: @nice;
+    padding: .5rem 1.5rem;
+  }
+  .logo{
+    font-size: 1.25rem!important;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+  .header-main{
+    .header-content{
+      h1{
+        i{
+          font-size: 28px;
+        }
+        font-size: 24px;
+      }
+      .header-form{
+        padding: 0;
+        .btn-main{
+          padding: 12px 24px;
+        }
+      }
+    }
+  }
+  #markets{
+    box-shadow: none;
+    font-size: 12px;
+    img{
+      width: 24px;
+    }
+    tr, td{
+      padding: 12px 16px;
+    }
+  }
+  .m-none{
+    display: none;
+  }
+  .m-switch{
+    display: block;
+  }
+  .footer-nav{
+    .container{
+      flex-flow: column wrap;
+      justify-content: flex-start;
+      .footer-item{
+        margin: 0 0 13px 0;
+      }
+      .footer-content{
+        display: none;
+      }
+      .drop-links{
+        display: initial;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header-form{
+    flex-direction: column;
+  }
+  #header-input, .btn-main{
+    box-sizing: border-box;
+    width: 100%;
+  }
+  #header-input::placeholder{
+    text-align: center;
+  }
+
+  .header-features{
+    &-active{
+      font-size: 15px;
+    }
+    &-muted{
+      font-size: 12px;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+  #nav{
+    .container{
+      .sm-none{
+        display: none;
+      }
+      .menu{
+        font-size: 13px;
+      }
+      .mobi{
+        ul{
+          li{
+            padding: 8px;
+            a{
+              font-size: 24px;
+            }
+          }
+        }
+        .close-menu{
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+  .features-item{
+    max-width: 290px;
+  }
+  .text-header{
+    font-size: 20px;
+  }
+  .sub-header{
+    font-size: 16px;
+  }
+  .text-description{
+    font-size: 13px;
+  }
+  .markets{
+    .markets-btn{
+      padding: 8px 24px;
+      font-size: 14px;
+    }
+    thead, tbody{
+      text-align: center;
+    }
+  }
+  .project{
+    .project-title{
+      font-size: 88px;
+      .project-title-sm{
+        font-size: 28px;
+      }
+    }
+  }
+  .text-header{
+    font-size: 1.65rem;
+  }
+  .btn{
+    font-size: 18px;
+  }
+  .start-trading-group > .btn{
+    margin: 0 3px;
+    width: 80px;
+  }
+  .footer-main{
+    .footer-header{
+      font-size: 16px;
+    }
+    .copyright{
+      padding: 24px 8px;
+    }
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+
+}
+/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+  #nav{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container{
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+}
+/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+  .container {
+    max-width: 440px;
+  }
+}
+/**/
+
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+  .container{
+    max-width: 720px;
+  }
+}
+/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+  .container{
+    max-width: 960px;
+  }
+}
+/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+  .container{
+    max-width: 1140px;
+  }
+}
+/**/

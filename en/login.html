@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lightning | Log In</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+<section id="getting-started" class="bg centered" style="background-image: url('../img/moon.jpg');">
+    <form class="main text-center" id="form-main">
+        <a href="../index.html" class="close" id="close-login">×</a>
+        <div class="tab-group">
+            <a href="../en/login.html" class="tab-link active-tab">Log In</a>
+            <a href="../en/signup.html" class="tab-link">Sign Up</a>
+            <div class="tab-scroll"
+            style="float: left"></div>
+        </div>
+        <div class="log-in">
+            <div class="input-wrapper">
+                <label for="login-email"></label>
+                <input id="login-email" class="gs-input box" type="email" placeholder="Email" required>
+            </div>
+            <p class="danger d-none">Please enter your email</p>
+            <div class="input-wrapper">
+                <label for="login-password"></label>
+                <input id="login-password" class="gs-input box" type="password" placeholder="Password" required>
+            </div>
+            <p class="danger d-none">Please enter your password</p>
+            <button type="submit" class="btn btn-outline btn-100 box">Log In</button>
+        </div>
+    </form>
+</section>
+<script src="./../js/particles.min.js"></script>
+<script type="module" src="../js/login.js"></script>
+</body>
+</html>

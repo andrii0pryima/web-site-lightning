@@ -1,0 +1,73 @@
+@import "_vars";
+
+.footer-main{
+  background: @dark;
+  color: #fff;
+  padding-top: 100px;
+  & .copyright{
+    padding: 32px 0;
+    font-size: 12px;
+    font-style: italic;
+    color: @muted;
+  }
+}
+.start-trading{
+  &-title{
+    font-weight: 400;
+
+  }
+  &-group{
+    margin-bottom: 32px;
+    & .btn{
+      text-align: center;
+      vertical-align: center;
+      width: 128px;
+      margin: 8px 8px;
+    }
+  }
+}
+
+.footer-nav{
+  padding: 64px 0 32px 0;
+  border-top: 1px solid @muted;
+  border-bottom: 1px solid @muted;
+  .container{
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+}
+.footer-item{
+  margin: 0 2rem 2rem 2rem;
+  .footer-link{
+    margin-bottom: 1rem;
+  }
+  .footer-header{
+    display: inline-block;
+  }
+  .drop-links{
+    display: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    float: right;
+    transition: transform .5s ease;
+  }
+  .spin{
+    transform: rotate(405deg);
+    text-shadow: 0 0 10px #fff;
+  }
+  .footer-content{
+    a{
+      display: block;
+      font-size: 15px;
+      margin-top: 3px;
+    }
+    a:hover{
+      color: #fff;
+    }
+  }
+  .slide{
+    display: initial!important;
+    color: red!important;
+    background: blue!important;
+  }
+}

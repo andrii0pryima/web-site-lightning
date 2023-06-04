@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lightning | Sign Up</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+<section id="getting-started" class="bg centered" style="background-image: url('../img/moon.jpg');">
+    <form class="main text-center" id="form-main">
+        <a href="../index.html" class="close" id="close-login">×</a>
+        <div class="tab-group">
+            <a href="../en/login.html" class="tab-link">Log In</a>
+            <a href="../en/signup.html" class="tab-link active-tab">Sign Up</a>
+            <div class="tab-scroll"
+                 style="float: right"></div>
+        </div>
+        <div class="sign-up">
+            <div class="input-wrapper">
+                <label for="reg-email"></label>
+                <input id="reg-email" class="gs-input box" type="email"  placeholder="Email" required>
+            </div>
+            <p class="danger d-none">Please enter your email</p>
+            <div class="input-wrapper">
+                <label for="reg-password"></label>
+                <input id="reg-password" class="gs-input box" type="password"  placeholder="Password" required>
+            </div>
+            <p class="danger d-none">Please enter your password</p>
+            <div id="agreement" class="text-left">
+                <label for="agreement-cb"></label>
+                <input id="agreement-cb" type="checkbox" checked>I have read and agree to the <a href="./agreement.html" target="_blank">Terms of Service.</a>
+                <p class="danger d-none">I am over 18 age, and I agree to Lightning's Terms</p>
+            </div>
+            <button type="submit" id="reg" class="btn btn-outline btn-100 box">Sign Up</button>
+        </div>
+    </form>
+</section>
+<script src="../js/particles.min.js"></script>
+<script type="module" src="../js/sign_up.js"></script>
+</body>
+</html>
